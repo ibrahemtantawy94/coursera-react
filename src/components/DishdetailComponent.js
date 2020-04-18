@@ -39,10 +39,12 @@ class Dishdetail extends Component {
             return(
                 <ListGroup>
                     {comments.map( (comment)=> {
+                        // let date = Date.parse(comment.date);
+                        let date = new Date(comment.date);
                         return (
                             <div>
                                 <ListGroupItem>{comment.comment}</ListGroupItem>
-                                <ListGroupItem>-- {comment.author, comment.date}</ListGroupItem>
+                                <ListGroupItem>-- {comment.author} , {date.toDateString()}</ListGroupItem>
                             </div>
                         );
                     })}
