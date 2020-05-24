@@ -96,4 +96,4 @@ function RenderLeader(props) {
         </Media>
     );
 }
-export default About;    
+export default About;
